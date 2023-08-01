@@ -21,13 +21,12 @@ body{
     width: 800px;
     height: 600px;
     padding: 50px;
-    border-radius: 5px;
-
+    border-radius: 5px; 
 }
 
 .box1{
     background: var(--boxColor);
-    width: 650px;
+    width: 600px;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
