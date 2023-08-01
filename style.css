@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color: var(--bcColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    background: var(--contColor);
+    width: 800px;
+    height: 600px;
+    padding: 50px;
+    border-radius: 5px;
+
+}
+
+.box1{
+    background: var(--boxColor);
+    width: 650px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalSales{
+    display: flex;
+    align-items: center;
+}
+
+.increase{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.increase h1{
+    font-size: 3.5rem;
+}
+
+.report{
+    border: 1.5px solid #ccc;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.report p{
+    font-size: .8rem;
+}
+
+.increase .vol{
+    background-color: var(--volColor);
+    padding: 7px;
+    width: 60px;
+    font-size: .5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--volTextcol);
+}
+
+.increase .vol svg{
+    width: 13px;
+}
+
+.increase .dols{
+    font-size: 1.5rem;
+}
+
+.box1 .heading svg{
+    color: var(--iconColor);
+    width: 50px;
+}
+
+:root{
+    --bcColor: #e8e8e8;
+    --contColor: #f7f7f7;
+    --boxColor: #ffffff;
+    --iconColor: #969696ff;
+    --volColor: #e5f8eb;
+    --volTextcol: #00ba34;
+}
