@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.min.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-    <title>Chart Js</title>
-</head>
-<body>
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
 
-    <main class="container">
-            <div class="box1">
+      <div class="container">
+        <div class="balanceDiv">
+          <div class="balance">
+            <p>My balance</p>
+            <h1>$921.48</h1>
+          </div>
 
-                <div class="heading">
-                    <div class="totalSales">
-                        <h1>Total Sales</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor"></path>
-                        </svg>
-                    </div>
+          <div class="logoDiv">
+            <img src="./images/logo.svg" alt="Brand Logo" />
+          </div>
+        </div>
 
-                    <div class="report">
-                        <p>View Report</p>
-                    </div>
-                </div>
+        <div class="chartDiv">
+          <h2>Spending - Last 7 days</h2>
 
-                <div class="increase">
-                    <h1> <span class="dols">$</span> 82.99</h1>
-                    
-                    <div class="vol">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M12 5l0 14"></path>
-                            <path d="M18 11l-6 -6"></path>
-                            <path d="M6 11l6 -6"></path>
-                        </svg>
-                        <h2>2.6%</h2>
-                    </div>
-                </div>
-                
-                <div>
-                    <canvas id="myChart"></canvas>
-                </div>
+          <canvas id="myChart"></canvas>
 
+          <hr />
+
+          <div class="total">
+            <div class="firstDiv">
+              <p>Total this month</p>
+              <h1>$478.33</h1>
             </div>
-               
+
+            <div class="secondDiv">
+              <p>+2.4%</p>
+              <h2>from last month</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="">Kilaso Olabode</a>
+      </div>
+
+      <script src="script.js"></script>
     </main>
-    
-    <script src="./script.js"></script>
-</body>
+  </body>
 </html>

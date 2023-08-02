@@ -4,26 +4,17 @@
 let ctx = document.getElementById("myChart").getContext('2d');
 
 let myChart = new Chart(ctx, {
-  type: "line",
+  type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple"],
 
     datasets: [
       {
-        label: "# of Votes",
         data: [12, 11, 5, 2, 13],
         tension: 0.3,
-        borderColor: '#306B34',
-        borderWidth: 2
+        borderRadius: 5,
+        backgroundColor: 'hsl(10, 79%, 65%)'
       },
-
-      {
-        label: "# of visitors",
-        data: [10, 11, 2, 3, 5, 7],
-        tension: 0.3,
-        borderColor: '#D8973C',
-        borderWidth: 2
-      }
     ]
   },
 
