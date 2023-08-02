@@ -8,9 +8,8 @@ async function fetchData() {
   const dataPoints = await response.json();
 
   // console.log(dataPoints);
-
-
   return dataPoints;
+  
 }
 
 fetchData().then((dataPoints) => {
