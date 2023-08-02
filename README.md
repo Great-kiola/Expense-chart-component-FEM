@@ -24,7 +24,7 @@ Your users should be able to:
 
 ## Links
 - Solution URL: [Solution URL](https://github.com/Great-kiola/Expense-chart-component-FEM)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://great-kiola.github.io/Expense-chart-component-FEM/)
 
 ## Misc
 
